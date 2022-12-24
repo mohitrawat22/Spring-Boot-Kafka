@@ -1,5 +1,13 @@
 package com.mor.orderservice.kafka;
 
+/*
+    KafkaTemplate provides convenient methods to send messages to topics.
+    In this example: Key is String, Value is OrderEvent
+    All we need to do is to call the sendMessage() method with the message and the topic name as parameters.
+    MessageBuilder: A builder for creating a GenericMessage.
+    withPayload: Create a builder for a new Message instance with the provided payload.
+*/
+
 import com.mor.basedomains.dto.OrderEvent;
 import org.apache.kafka.clients.admin.NewTopic;
 import org.slf4j.Logger;
